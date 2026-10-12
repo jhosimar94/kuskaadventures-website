@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://kuskaadventures.com/</loc>
+    <lastmod>2026-10-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kuskaadventures.com/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://kuskaadventures.com/es/"/>
+  </url>
+  <url>
+    <loc>https://kuskaadventures.com/es/</loc>
+    <lastmod>2026-10-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kuskaadventures.com/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://kuskaadventures.com/es/"/>
+  </url>
+  <url>
+    <loc>https://kuskaadventures.com/episodes.html</loc>
+    <lastmod>2026-10-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kuskaadventures.com/episodes.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://kuskaadventures.com/es/episodios.html"/>
+  </url>
+  <url>
+    <loc>https://kuskaadventures.com/es/episodios.html</loc>
+    <lastmod>2026-10-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kuskaadventures.com/episodes.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://kuskaadventures.com/es/episodios.html"/>
+  </url>
+  <url>
+    <loc>https://kuskaadventures.com/privacy.html</loc>
+    <lastmod>2026-10-12</lastmod>
+  </url>
+  <url>
+    <loc>https://kuskaadventures.com/terms.html</loc>
+    <lastmod>2026-10-12</lastmod>
+  </url>
+</urlset>

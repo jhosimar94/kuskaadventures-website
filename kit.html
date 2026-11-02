@@ -42,6 +42,11 @@
       .btns, footer .noprint { display:none; }
       .card { box-shadow:none; border:1px solid #ddd; break-inside:avoid; }
       .color { break-before:page; }
+      .color img { max-height:85vh; width:auto; }
+      body.only-color header, body.only-color footer, body.only-color main > *:not(.color),
+      body.only-color .color h2, body.only-color .color p, body.only-color .color .btns { display:none !important; }
+      body.only-color .color { break-before:auto; border:0; padding:0; margin:0; }
+      body.only-color .color img { max-height:95vh; max-width:100%; width:auto; margin:0 auto; }
     }
   </style>
 </head>
@@ -51,7 +56,7 @@
     <h1>Kit Kuska para Papás 💛</h1>
     <p class="lead">Gratis, de Lilah y Melody: Aventuras Kuska. Cuatro cosas sencillas para usar en casa con tus hijos, hoy mismo.</p>
     <div class="btns">
-      <button class="btn" onclick="window.print()">🖨️ Imprimir o guardar en PDF</button>
+      <button class="btn" onclick="window.print()">🖨️ Imprimir todo el kit</button>
       <a class="btn soft" href="https://www.facebook.com/reel/866511686523766/">▶ Ver el Episodio 2 gratis</a>
     </div>
   </header>
@@ -97,12 +102,13 @@
 
     <section class="card color">
       <h2><span class="num">4</span>Hoja para colorear: Melody</h2>
-      <p>Imprime esta página y deja que tus hijos le pongan sus colores favoritos.</p>
+      <p>Imprime el dibujo y deja que tus hijos le pongan sus colores favoritos.</p>
+      <div class="btns"><button class="btn" onclick="printColor()">🖍️ Imprimir solo el dibujo</button></div>
       <img src="colorear-melody.png" alt="Dibujo para colorear de Melody saludando">
     </section>
 
     <div class="btns">
-      <button class="btn" onclick="window.print()">🖨️ Imprimir o guardar en PDF</button>
+      <button class="btn" onclick="window.print()">🖨️ Imprimir todo el kit</button>
       <a class="btn soft" href="https://www.facebook.com/122094159465516844">Seguir a Aventuras Kuska en Facebook</a>
     </div>
   </main>
@@ -111,5 +117,12 @@
     <p>Lilah y Melody: Aventuras Kuska · Dibujos animados para niños y familias</p>
     <p class="noprint"><a href="/">kuskaadventures.com</a> · <a href="privacy.html">Privacidad</a></p>
   </footer>
+  <script>
+    function printColor() {
+      document.body.classList.add('only-color');
+      window.print();
+    }
+    window.addEventListener('afterprint', function () { document.body.classList.remove('only-color'); });
+  </script>
 </body>
 </html>

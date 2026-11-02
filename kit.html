@@ -43,10 +43,6 @@
       .card { box-shadow:none; border:1px solid #ddd; break-inside:avoid; }
       .color { break-before:page; }
       .color img { max-height:85vh; width:auto; }
-      body.only-color header, body.only-color footer, body.only-color main > *:not(.color),
-      body.only-color .color h2, body.only-color .color p, body.only-color .color .btns { display:none !important; }
-      body.only-color .color { break-before:auto; border:0; padding:0; margin:0; }
-      body.only-color .color img { max-height:95vh; max-width:100%; width:auto; margin:0 auto; }
     }
   </style>
 </head>
@@ -103,7 +99,7 @@
     <section class="card color">
       <h2><span class="num">4</span>Hoja para colorear: Melody</h2>
       <p>Imprime el dibujo y deja que tus hijos le pongan sus colores favoritos.</p>
-      <div class="btns"><button class="btn" onclick="printColor()">🖍️ Imprimir solo el dibujo</button></div>
+      <div class="btns"><a class="btn" href="colorear.html" target="_blank" rel="noopener">🖍️ Imprimir solo el dibujo</a></div>
       <img src="colorear-melody.png?v=2" alt="Dibujo para colorear de Melody saludando">
     </section>
 
@@ -117,12 +113,5 @@
     <p>Lilah y Melody: Aventuras Kuska · Dibujos animados para niños y familias</p>
     <p class="noprint"><a href="/">kuskaadventures.com</a> · <a href="privacy.html">Privacidad</a></p>
   </footer>
-  <script>
-    function printColor() {
-      document.body.classList.add('only-color');
-      window.print();
-    }
-    window.addEventListener('afterprint', function () { document.body.classList.remove('only-color'); });
-  </script>
 </body>
 </html>
